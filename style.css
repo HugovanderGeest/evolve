@@ -1,5 +1,6 @@
 /* css */
 
+/* General */
 * {
   padding: 0;
   margin: 0;
@@ -8,10 +9,312 @@
 
 body {
   background-color: #FFF8EF;
+  height:200vh;
 }
 
 main {
   overflow-x: hidden;
+  padding:0 5vw;
+  box-sizing: border-box;
+}
+
+.logo {
+  position: absolute;
+  float: left;
+  margin: 50px;
+  max-width: 10%;
+  max-height: 10%;
+}
+
+/*-- menu --*/
+.nav-desktop{
+  position: absolute;
+  right:0;
+  top:-50px;
+  margin:100px;
+  width:40vw;
+  height:10vh;
+  border-bottom:1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-desktop > a{
+  color:#000;
+  text-decoration: none;
+}
+
+.nav-desktop > a > p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26pt;
+  padding:10px;
+  background-color: lightgrey;
+  border-radius: 2px;
+}
+
+.menu-icoon {
+  width: 10vw;
+  height: 10vw;
+  float: right;
+  margin: 2vw;
+}
+
+.menu-wrap{
+  position: fixed;
+  width:100vw;
+  /*height:100vh;*/
+  pointer-events: none;
+}
+
+.hamburger {
+  position: relative;
+  right: 5vw;
+  pointer-events: auto;
+  width:5vw;
+  height:5vw;
+  display: none;
+}
+
+.close-menu{
+  position: relative;
+  right:0;
+  background-color: #fff;
+  width:5vw;
+  height:5vw;
+  right:5vw;
+}
+
+.menutekst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  padding: 20px;
+  margin: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+  transition: right 0.25s ease;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  display: none;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+nav > ul > li {
+  text-decoration: none;
+}
+
+#menu-switch {
+  display: none;
+}
+
+#menu-switch:checked ~ nav {
+  right: -100vw;
+}
+
+/*-- --*/
+
+/*-- koptekst --*/
+.koptekst {
+  margin: 40px;
+  margin-top: 220px;
+  display: flex;
+  justify-content: center;
+  width:40%;
+  align-items: center;
+  border: 1px solid transparent;
+  padding: 10px;
+  box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size:30pt;
+}
+/*--  --*/
+
+/*-- illustratie --*/
+.illustratie {
+  position: absolute;
+  top: 220px;
+  right:100px;
+  width:40%;
+  height:400px;
+  overflow: hidden;
+  z-index:-1;
+}
+
+.illustratie-img {
+  border: 1px solid #000;
+  height: 400px;
+  object-fit: cover;
+  border: 1px solid transparent;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+/*--  --*/
+
+/*-- video --*/
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:70vh;
+  border-radius: 5px;
+  margin-top:100px;
+  padding:0;
+}
+/*--  --*/
+
+/*-- dit zijn wij --*/
+.ditzijnwij {
+  margin: 30px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid transparent;
+}
+
+.intro-tekst {
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px;
+}
+
+.portretten {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.portret {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 15vw;
+  height: 15vw;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+/*--  --*/
+
+/*-- Contacttitel --*/
+.contacttitel {
+  margin: 30px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid transparent;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+/*--  --*/
+
+/*-- contactform --*/
+.contactform {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*--  --*/
+
+/*-- contactlabel --*/
+.contactlabel {
+  background-color: transparent;
+  font-size: 20px;
+  padding: 5px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-radius: 5px;
+}
+
+.contactlabel:hover {
+  background-color: white;
+}
+/*--  --*/
+
+/*-- Submit --*/
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.submitknop {
+  font-size: 20px;
+  border: 1px transparent;
+  background-color: transparent;
+  padding: 20px 100px 20px 100px;
+}
+/*--  --*/
+
+div#content {
+  display: none;
+}
+button:hover + div#content {
+  display: block;
+}
+
+.fotos {
+  background-color: transparent;
+  border: 1px transparent;
+}
+
+#content {
+  font-size: 24px;
+  position: absolute;
+}
+
+.vlek {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.5;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.pvlek1 {
+  position: relative;
+  width: 160%;
+  box-sizing: border-box;
+}
+
+.gvlek1 {
+  position: relative;
+  width: 260%;
+  box-sizing: border-box;
+}
+
+.pvlek2 {
+  position: relative;
+  width: 80%;
+  box-sizing: border-box;
 }
 
 
@@ -25,6 +328,14 @@ main {
 
   /*-- General --*/
 
+    body {
+      background-color: #FFF8EF;
+    }
+
+    main{
+      overflow-x: hidden;
+    }
+
     .logo {
       position: absolute;
       float: left;
@@ -34,6 +345,10 @@ main {
     }
 
     /*-- menu --*/
+    .nav-desktop{
+      display:none;
+    }
+
     .menu-icoon {
       width: 10vw;
       height: 10vw;
