@@ -4,8 +4,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "PT Sans", sans-serif;
-}
+  font-family: 'Montserrat', sans-serif;}
 
 /* DESKTOP */
 @media only screen and (min-width: 768px) {
@@ -242,8 +241,8 @@
   /*-- illustratie --*/
   .illustratie {
     position: absolute;
-    top: 220px;
-    right: 100px;
+    top: 295px;
+    right: 150px;
     width: 40%;
     height: 400px;
     overflow: hidden;
@@ -252,10 +251,9 @@
 
   .illustratie-img {
     border: 1px solid #000;
-    height: 400px;
+    height: 250px;
     object-fit: cover;
     border: 1px solid transparent;
-    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
   }
   /*--  --*/
@@ -277,6 +275,7 @@
   .video > div {
     position: absolute;
     left: 18.8%;
+    font-size: 20px;
     width: 25vw;
     top: 700px;
     padding: 2vw;
