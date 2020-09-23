@@ -7,320 +7,433 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-body {
-  background-color: #FFF8EF;
-  height:200vh;
-}
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
 
-main {
-  overflow-x: hidden;
-  padding:0 5vw;
-  box-sizing: border-box;
-}
+  body {
+    background-color: #FFF8EF;
+    height:200vh;
+  }
 
-.logo {
-  position: absolute;
-  float: left;
-  margin: 50px;
-  max-width: 10%;
-  max-height: 10%;
-}
+/* VLEKKEN */
+  .vlekken-wrap{
+    float:left;
+    position: absolute;
+    z-index:-15;
+    height:256vh;
+    width:100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
 
-/*-- menu --*/
-.nav-desktop{
-  position: absolute;
-  right:0;
-  top:-50px;
-  margin:100px;
-  width:40vw;
-  height:10vh;
-  border-bottom:1px solid #000;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+  .vlek-eigenschap{
+    position: absolute;
+    width:50vw;
+    height:30vw;
+    background-position: center;
+    background-size:fill;
+    background-repeat:no-repeat;
+  }
 
-.nav-desktop > a{
-  color:#000;
-  text-decoration: none;
-}
+  #vlekje1{
+    background-image: url('img/gelevlek3.png');
+    left:-200px;
+    top:300px;
+  }
 
-.nav-desktop > a > p{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 26pt;
-  padding:10px;
-  background-color: lightgrey;
-  border-radius: 2px;
-}
+  #vlekje2{
+    background-image: url('img/Paarsevlek1.png');
+    right:-100px;
+    top:10px;
+  }
 
-.menu-icoon {
-  width: 10vw;
-  height: 10vw;
-  float: right;
-  margin: 2vw;
-}
+  #vlekje3{
+    background-image: url('img/Paarsevlek2.png');
+    right:-120px;
+    top:650px;
+    height: 40vw;
+  }
 
-.menu-wrap{
-  position: fixed;
-  width:100vw;
-  /*height:100vh;*/
-  pointer-events: none;
-}
+  #vlekje4{
+    background-image: url('img/Gelevlek4.png');
+    left:-120px;
+    top:1200px;
+    height:40vw;
+  }
 
-.hamburger {
-  position: relative;
-  right: 5vw;
-  pointer-events: auto;
-  width:5vw;
-  height:5vw;
-  display: none;
-}
+  #vlekje5{
+    background-image: url('img/Paarsevlek5.png');
+    right:-200px;
+    top:1500px;
+    height:40vw;
+  }
 
-.close-menu{
-  position: relative;
-  right:0;
-  background-color: #fff;
-  width:5vw;
-  height:5vw;
-  right:5vw;
-}
+  #vlekje6{
+    background-image: url('img/Gelevlek5.png');
+    left:-500px;
+    top:2200px;
+  }
 
-.menutekst {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  padding: 20px;
-  margin: 30px;
-  text-decoration: none;
-  color: black;
-}
-
-nav {
-  background-color: rgba(255, 255, 255, 0.9);
-  z-index: 10;
-  transition: right 0.25s ease;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  right: 0;
-  display: none;
-}
-
-nav > ul {
-  list-style: none;
-}
-
-nav > ul > li {
-  text-decoration: none;
-}
-
-#menu-switch {
-  display: none;
-}
-
-#menu-switch:checked ~ nav {
-  right: -100vw;
-}
+  #vlekje7{
+    background-image: url('img/Paarsevlek2.png');
+    right:-300px;
+    top:2300px;
+    height:40vw;
+  }
 
 /*-- --*/
 
-/*-- koptekst --*/
-.koptekst {
-  margin: 40px;
-  margin-top: 220px;
-  display: flex;
-  justify-content: center;
-  width:40%;
-  align-items: center;
-  border: 1px solid transparent;
-  padding: 10px;
-  box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  font-size:30pt;
-}
-/*--  --*/
+  main {
+    overflow-x: hidden;
+    padding:0 5vw;
+  }
 
-/*-- illustratie --*/
-.illustratie {
-  position: absolute;
-  top: 220px;
-  right:100px;
-  width:40%;
-  height:400px;
-  overflow: hidden;
-  z-index:-1;
-}
+  .logo {
+    position: absolute;
+    float: left;
+    margin: 50px;
+    max-width: 10%;
+    max-height: 10%;
+  }
 
-.illustratie-img {
-  border: 1px solid #000;
-  height: 400px;
-  object-fit: cover;
-  border: 1px solid transparent;
-  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-}
-/*--  --*/
+  /*-- menu --*/
+  .nav-desktop{
+    position: fixed;
+    right:0;
+    top:-50px;
+    margin:100px;
+    width:40vw;
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
 
-/*-- video --*/
-.video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height:70vh;
-  border-radius: 5px;
-  margin-top:100px;
-  padding:0;
-}
-/*--  --*/
+  .nav-desktop > a{
+    color:#000;
+    text-decoration: none;
+  }
 
-/*-- dit zijn wij --*/
-.ditzijnwij {
-  margin: 30px;
-  font-size: 30px;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  border: 1px solid transparent;
-}
+  .nav-desktop > a > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26pt;
+    padding:10px;
+    border-radius: 5px;
+    transition: 0.2s;
+    background-color: #FFF8EF;
+    border: 1px solid transparent;
+    box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  }
 
-.intro-tekst {
-  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 10px;
-}
+  .nav-desktop > a > p:hover{
+    color: black;
+    transform: scale(1.1);
+    background-image: url('img/paarse_bg.png');
+    background-size:cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+  }
 
-.portretten {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
+  .menu-icoon {
+    width: 10vw;
+    height: 10vw;
+    float: right;
+    margin: 2vw;
+  }
 
-.portret {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
-  width: 15vw;
-  height: 15vw;
-  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
-  object-fit: cover;
-}
-/*--  --*/
+  .menu-wrap{
+    position: fixed;
+    width:100vw;
+    /*height:100vh;*/
+    pointer-events: none;
+  }
 
-/*-- Contacttitel --*/
-.contacttitel {
-  margin: 30px;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid transparent;
-  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-}
-/*--  --*/
+  .hamburger {
+    position: relative;
+    right: 5vw;
+    pointer-events: auto;
+    width:5vw;
+    height:5vw;
+    display: none;
+  }
 
-/*-- contactform --*/
-.contactform {
-  margin: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/*--  --*/
+  .close-menu{
+    position: relative;
+    right:0;
+    background-color: #fff;
+    width:5vw;
+    height:5vw;
+    right:5vw;
+  }
 
-/*-- contactlabel --*/
-.contactlabel {
-  background-color: transparent;
-  font-size: 20px;
-  padding: 5px;
-  margin: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
-  border-radius: 5px;
-}
+  .menutekst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 20px;
+    margin: 30px;
+    text-decoration: none;
+    color: black;
+  }
 
-.contactlabel:hover {
-  background-color: white;
-}
-/*--  --*/
+  nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 10;
+    transition: right 0.25s ease;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    display: none;
+  }
 
-/*-- Submit --*/
-.submit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
-}
+  nav > ul {
+    list-style: none;
+  }
 
-.submitknop {
-  font-size: 20px;
-  border: 1px transparent;
-  background-color: transparent;
-  padding: 20px 100px 20px 100px;
-}
-/*--  --*/
+  nav > ul > li {
+    text-decoration: none;
+  }
 
-div#content {
-  display: none;
-}
-button:hover + div#content {
-  display: block;
-}
+  #menu-switch {
+    display: none;
+  }
 
-.fotos {
-  background-color: transparent;
-  border: 1px transparent;
-}
+  #menu-switch:checked ~ nav {
+    right: -100vw;
+  }
 
-#content {
-  font-size: 24px;
-  position: absolute;
-}
+  /*-- --*/
 
-.vlek {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  width: 100vw;
-  z-index: -1;
-  opacity: 0.5;
-  overflow: hidden;
-  box-sizing: border-box;
-}
+  /*-- koptekst --*/
+  .koptekst {
+    margin: 40px;
+    margin-top: 220px;
+    display: flex;
+    justify-content: center;
+    width:40%;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 10px;
+    box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size:20pt;
+  }
+  /*--  --*/
 
-.pvlek1 {
-  position: relative;
-  width: 160%;
-  box-sizing: border-box;
-}
+  /*-- illustratie --*/
+  .illustratie {
+    position: absolute;
+    top: 220px;
+    right:100px;
+    width:40%;
+    height:400px;
+    overflow: hidden;
+    z-index:-1;
+  }
 
-.gvlek1 {
-  position: relative;
-  width: 260%;
-  box-sizing: border-box;
-}
+  .illustratie-img {
+    border: 1px solid #000;
+    height: 400px;
+    object-fit: cover;
+    border: 1px solid transparent;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  /*--  --*/
 
-.pvlek2 {
-  position: relative;
-  width: 80%;
-  box-sizing: border-box;
+  /*-- video --*/
+  .video {
+    margin:auto;
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    height:70vh;
+    width:70%;
+    border-radius: 5px;
+    margin-top:300px;
+    margin-bottom:200px;
+    padding:0;
+  }
+
+  .video > div{
+    position: absolute;
+    right:18.8%;
+    width:25vw;
+    top:760px;
+    padding:2vw;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align:center;
+    z-index:-5;
+  }
+  /*--  --*/
+
+  /*-- dit zijn wij --*/
+  .ditzijnwij {
+    text-align: left;
+    margin: 30px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid transparent;
+  }
+
+  .portret:hover {
+    transform: scale(1.1);
+  }
+
+  .intro-tekst {
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 10px;
+  }
+
+  .portretten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:50px;
+  }
+
+  .portret {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 15vw;
+    height: 15vw;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: 0.2s;
+
+  }
+  /*--  --*/
+
+  /*-- Contacttitel --*/
+  .contacttitel {
+    margin: 30px;
+    font-size: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid transparent;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  /*--  --*/
+
+  /*-- contactform --*/
+  .contactform {
+    margin: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  /*--  --*/
+
+  /*-- contactlabel --*/
+  .contactlabel {
+    background-color: transparent;
+    font-size: 20px;
+    padding: 5px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-radius: 5px;
+  }
+
+  .contactlabel:hover {
+    background-color: white;
+  }
+  /*--  --*/
+
+  /*-- Submit --*/
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+  }
+
+  .submit:hover {
+    transform: scale(1.1);
+  }
+
+  .submitknop {
+    font-size: 20px;
+    border: 1px transparent;
+    background-color: transparent;
+    padding: 20px 100px 20px 100px;
+  }
+  /*--  --*/
+
+  div#content {
+    display: none;
+  }
+  button:hover + div#content {
+    display: block;
+  }
+
+  .fotos {
+    background-color: transparent;
+    border: 1px transparent;
+  }
+
+  #content {
+    font-size: 24px;
+    position: absolute;
+  }
+
+  /* contact DESKTOP */
+  .contact-desktop{
+    position: absolute;
+    right:0;
+    width:35vw;
+    height:10vh;
+    border: 1px solid transparent;
+    box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin:100px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#000;
+    margin-top: 200px;
+  }
+
+  .contact-desktop > h2{
+    font-size: 30pt;
+  }
+
+  .contact-desktop > p{
+    font-size: 20pt;
+  }
+  /*-- --*/
+
 }
 
 
 /* ---------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------- */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 1125px) {
   /* ---------------------------------------------------------------------------- */
   /* ---------------------------------------------------------------------------- */
   /* ---------------------------------------------------------------------------- */
@@ -331,6 +444,73 @@ button:hover + div#content {
     body {
       background-color: #FFF8EF;
     }
+
+    /* VLEKKEN */
+    .vlekken-wrap{
+      float:left;
+      position: absolute;
+      z-index:-15;
+      height:256vh;
+      width:100vw;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .vlek-eigenschap{
+      position: absolute;
+      width:65vw;
+      height:55vw;
+      background-position: center;
+      background-size:contain;
+      background-repeat:no-repeat;
+    }
+
+    #vlekje1{
+      background-image: url('img/gelevlek3.png');
+      left:-50px;
+      top:400px;
+    }
+
+    #vlekje2{
+      background-image: url('img/Paarsevlek1.png');
+      right:-100px;
+      top:10px;
+    }
+
+    #vlekje3{
+      background-image: url('img/Paarsevlek2.png');
+      right:-80px;
+      top:700px;
+      height: 40vw;
+    }
+
+    #vlekje4{
+      background-image: url('img/Gelevlek4.png');
+      left:-70px;
+      top:900px;
+      height:40vw;
+    }
+
+    #vlekje5{
+      background-image: url('img/Paarsevlek5.png');
+      right:-50px;
+      top:1100px;
+      height:40vw;
+    }
+
+    #vlekje6{
+      background-image: url('img/Gelevlek5.png');
+      left:-10px;
+      top:1400px;
+    }
+
+    #vlekje7{
+      background-image: url('img/Paarsevlek2.png');
+      right:-100px;
+      top:1700px;
+      height:40vw;
+    }
+    /*-- --*/
 
     main{
       overflow-x: hidden;
@@ -450,10 +630,15 @@ button:hover + div#content {
     /*-- video --*/
     .video {
       display: flex;
-      justify-content: center;
+      justify-content: row;
       align-items: center;
       border-radius: 5px;
+      width:80vw;
+      margin:auto;
+    }
 
+    .video > div{
+      display: none;
     }
     /*--  --*/
 
@@ -494,7 +679,7 @@ button:hover + div#content {
 
     /*-- Contacttitel --*/
 
-    .Contacttitel {
+    .contacttitel {
       margin: 30px;
       font-size: 30px;
       display: flex;
@@ -515,11 +700,9 @@ button:hover + div#content {
       justify-content: center;
       align-items: center;
     }
-
     /*--  --*/
 
     /*-- contactlabel --*/
-
     .contactlabel {
       background-color: transparent;
       font-size: 20px;
@@ -577,29 +760,9 @@ button:hover + div#content {
       position: absolute;
     }
 
-    .vlek {
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      width: 100vw;
-      z-index: -1;
-      opacity: 0.5;
-      overflow: hidden;
+    /* contact DESKTOP */
+    .contact-desktop{
+      display:none;
     }
-
-    .pvlek1 {
-      position: relative;
-      width: 160%;
-    }
-
-    .gvlek1 {
-      position: relative;
-        width: 260%;
-    }
-
-    .pvlek2 {
-      position: relative;
-      width: 80%;
-    }
-
+    /*-- --*/
   }

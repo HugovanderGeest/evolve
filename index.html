@@ -8,6 +8,18 @@
     <title>Evolve</title>
   </head>
   <body>
+
+    <!-- alle vlekken -->
+    <section class="vlekken-wrap">
+      <div class="vlek-eigenschap" id="vlekje1"></div>
+      <div class="vlek-eigenschap" id="vlekje2"></div>
+      <div class="vlek-eigenschap" id="vlekje3"></div>
+      <div class="vlek-eigenschap" id="vlekje4"></div>
+      <div class="vlek-eigenschap" id="vlekje5"></div>
+      <div class="vlek-eigenschap" id="vlekje6"></div>
+      <div class="vlek-eigenschap" id="vlekje7"></div>
+    </section>
+
     <!-- menu -->
     <input type="checkbox" id="menu-switch" checked />
     <nav id="muisklik">
@@ -37,26 +49,11 @@
       </div>
       <!-- -->
 
-      <!-- vlekken -->
-      <div class="vlek">
-      <img class="pvlek2" src="img/Paarsevlek3.png" alt="">
-      </div>
-      <!-- -->
-
       <!-- Koptekst -->
       <div class="koptekst" id="overons">
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          Wij zijn Evolve en ons bedrijf zal zich richten op het maken van huisstijlen voor startende bedrijven en bedrijven die een nieuw imago of stijl willen. Met ons bedrijf zien we graag onszelf ontwikkelen, maar ook dat de klanten met onze producten verder kunnen groeien als bedrijf. Wij werken graag met genoeg uitdaging, een goede communicatie en duidelijkheid. Wij onderscheiden ons van andere doordat wij erg loyaal zijn. Kortom, wij maken de juiste huisstijl waar uw bedrijf mee vooruit zult gaan. Work together, grow together: Evolve.
         </p>
-      </div>
-      <!-- -->
-
-      <!-- vlekken -->
-      <div class="vlek">
-        <!-- HIER ZIT DE FOUT --><img class="gvlek1" src="img/gelevlek3.png" alt="">
       </div>
       <!-- -->
 
@@ -68,11 +65,14 @@
 
       <!-- video -->
       <div class="video">
-        <iframe
-          src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" width="100%"
-          height="100%"
-        >
-        </iframe>
+        <div>
+          <h2>Onze promovideo</h2>
+        </div>
+          <iframe
+            src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" width="100%"
+            height="100%"
+          >
+          </iframe>
       </div>
       <!-- -->
 
@@ -81,24 +81,24 @@
         <p class="intro-tekst">Dit zijn wij!</p>
         <section class="portretten">
 
-          <button class="fotos"><img src="img/ili.jpg" class="portret" /></button>
+          <button class="fotos"><img src="img/carmen.jpg" class="portret" /></button>
           <div id="content">
-            Hugo van der Geest
+            Carmen Kaandorp
           </div>
 
-          <button class="fotos"><img src="img/ili.jpg" class="portret" /></button>
-          <div id="content">
-            Lau de Hoop
-          </div>
-
-          <button class="fotos"><img src="img/ili.jpg" class="portret" /></button>
+          <button class="fotos"><img src="img/shanna.jpg" class="portret" /></button>
           <div id="content">
             Shanna Linnane
           </div>
 
-          <button class="fotos"><img src="img/ili.jpg" class="portret" /></button>
+          <button class="fotos"><img src="img/hugo.jpg" class="portret" /></button>
           <div id="content">
-            Carmen Kaandorp
+            Hugo van der Geest
+          </div>
+
+          <button class="fotos"><img src="img/lau.jpg" class="portret" /></button>
+          <div id="content">
+            Lau de Hoop
           </div>
 
         </section>
@@ -109,18 +109,11 @@
       <div class="contacttitel" id="contact">
         <p>Contact</p>
       </div>
-      <!-- --- --- --- --- --- -->
-
-      <!-- vlekken -->
-      <div class="vlek">
-      <img class="pvlek1" src="img/Paarsevlek1.png" alt="">
-      </div>
       <!-- -->
-
 
       <!-- contactform -->
       <div class="contactform">
-        <form action="mailto:evolve@" method="post" enctype="text/plain">          
+        <form action="mailto:evolve@" method="post" enctype="text/plain">
         <div>
 
           <!-- naam -->
@@ -166,15 +159,21 @@
             ></textarea>
           </div>
 
-          <div class="submit" >
-          <input class="submitknop" type="submit" value="Stuur" />
-        </form>
-        <div>
+          <div class="submit">
+            <input class="submitknop" type="submit" value="Stuur" />
+            </form>
+          </div>
+        </div>
+    <!-- -->
 
+    <!-- contactform DESKTOP -->
+    <a href="mailto:evolve@" class="nostyle">
+      <div class="contact-desktop">
+        <h2>Vragen?</h2>
+        <p>Neem contact met ons op.</p>
       </div>
-
-
-    <!-- -- --- --- --- --- -->
+    </a>
+    <!-- -->
 
     </main>
   </body>
