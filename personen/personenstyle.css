@@ -11,7 +11,8 @@
 @media only screen and (min-width: 768px) {
   body {
     background-color: #fff8ef;
-    height: 200vh;
+    height: 100vh;
+    overflow: hidden;
   }
 
   /* VLEKKEN */
@@ -19,8 +20,8 @@
     float: left;
     position: absolute;
     z-index: -15;
-    height: 270vh;
-    width: 98vw;
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
     box-sizing: border-box;
   }
@@ -97,9 +98,8 @@
   /*-- menu --*/
   .nav-desktop {
     position: fixed;
-    right: 0;
-    top: -50px;
-    margin: 100px;
+    right: -50;
+    margin: 50px 100px 0px 50px;
     width: 40vw;
     height: 10vh;
     display: flex;
@@ -133,7 +133,6 @@
     background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
-    box-shadow: none;
   }
 
   .menu-icoon {
@@ -208,23 +207,8 @@
 
   /*-- --*/
 
-  /*-- koptekst --*/
-  .koptekst {
-    margin: 40px;
-    display: flex;
-    justify-content: center;
-    width: 40%;
-    align-items: center;
-    border: 1px solid transparent;
-    padding: 10px;
-    box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    font-size: 20pt;
-  }
-  /*--  --*/
-
-  /*-- Evolve --*/
-  .Evolve {
+  /*-- Naam --*/
+  .Naam {
     margin: 40px;
     margin-top: 220px;
     display: flex;
@@ -235,7 +219,35 @@
     padding: 10px;
     box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    font-size: 30pt;
+    font-size: 20pt;
+  }
+  /*--  --*/
+
+  /*-- koptekst --*/
+  .koptekst {
+    margin-left: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 10px;
+    box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 13pt;
+  }
+  /*--  --*/
+
+  /*-- Social --*/
+  .Social {
+    margin: 40px;
+    width: 50px;
+    transition: 0.2s;
+  }
+
+  .Social:hover {
+    transform: scale(1.1);
   }
   /*--  --*/
 
@@ -453,6 +465,7 @@
 
   body {
     background-color: #fff8ef;
+    overflow: hidden;
   }
 
   /* VLEKKEN */
@@ -460,7 +473,7 @@
     float: left;
     position: absolute;
     z-index: -15;
-    height: 206vh;
+    height: 256vh;
     width: 100vw;
     overflow: hidden;
     box-sizing: border-box;
@@ -536,14 +549,49 @@
 
   /*-- menu --*/
   .nav-desktop {
-    display: none;
+    position: fixed;
+    right: -80;
+    margin: 15px 100px 0px 50px;
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+
+  .nav-desktop > a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .nav-desktop > a > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26pt;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+    background-color: #fff8ef;
+    border: 1px solid transparent;
+    box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-desktop > a > p:hover {
+    color: black;
+    transform: scale(1.1);
+    background-image: url("img/paarse_bg.png");
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
   }
 
   .menu-icoon {
     width: 10vw;
     height: 10vw;
     float: right;
-    margin: 9vw;
+    margin: 2vw;
   }
 
   .menu-wrap {
@@ -554,9 +602,7 @@
   }
 
   .hamburger {
-    position: relative;
-    right: 0;
-    pointer-events: auto;
+    display: none;
   }
 
   .close-menu {
@@ -604,6 +650,22 @@
 
   /*-- --*/
 
+  /*-- Naam --*/
+  .Naam {
+    margin: 40px;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    width: 72%;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 10px;
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 20pt;
+  }
+  /*--  --*/
+
   /*-- koptekst --*/
   .koptekst {
     margin: 40px;
@@ -615,23 +677,18 @@
     padding: 10px;
     box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    max-height: 70px;
+    overflow-y: auto;
+    padding-top: 120px;
   }
   /*--  --*/
 
-  .Evolve {
-    margin: 40px;
-    margin-top: 170px;
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    align-items: center;
-    border: 1px solid transparent;
-    padding: 10px;
-    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    font-size: 30pt;
+  /*-- Social --*/
+  .Social {
+    margin: 30px 30px 40px 40px;
+    width: 50px;
+    transition: 0.2s;
   }
-  /*--  --*/
 
   /*-- illustratie --*/
   .illustratie {
