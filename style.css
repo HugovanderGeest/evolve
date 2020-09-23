@@ -19,7 +19,7 @@
     float: left;
     position: absolute;
     z-index: -15;
-    height: 270vh;
+    height: 390vh;
     width: 98vw;
     overflow: hidden;
     box-sizing: border-box;
@@ -269,16 +269,16 @@
     height: 70vh;
     width: 70%;
     border-radius: 5px;
-    margin-top: 300px;
+    margin-top: 320px;
     margin-bottom: 200px;
     padding: 0;
   }
 
   .video > div {
     position: absolute;
-    right: 18.8%;
+    left: 18.8%;
     width: 25vw;
-    top: 760px;
+    top: 700px;
     padding: 2vw;
     box-sizing: border-box;
     border: 1px solid transparent;
@@ -293,11 +293,6 @@
   .ditzijnwij {
     text-align: left;
     margin: 30px;
-    font-size: 30px;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    border: 1px solid transparent;
   }
 
   .portret:hover {
@@ -305,9 +300,22 @@
   }
 
   .intro-tekst {
-    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
-    text-align: center;
-    padding: 10px;
+    position: absolute;
+    left: 50px;
+    width: 15vw;
+    height: 10vh;
+    border: 1px solid transparent;
+    box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    margin-top: -150px;
+    font-size: 40px;
   }
 
   .portretten {
@@ -347,7 +355,8 @@
 
   /*-- contactform --*/
   .contactform {
-    margin: 30px;
+    margin-top: 350px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -406,6 +415,7 @@
   .fotos {
     background-color: transparent;
     border: 1px transparent;
+    cursor: pointer;
   }
 
   #content {
@@ -416,9 +426,9 @@
   /* contact DESKTOP */
   .contact-desktop {
     position: absolute;
-    right: 0;
+    left: -50px;
     width: 30vw;
-    height: 10vh;
+    height: 20vh;
     border: 1px solid transparent;
     box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -429,7 +439,7 @@
     justify-content: center;
     align-items: center;
     color: #000;
-    margin-top: 200px;
+    margin-top: 250px;
   }
 
   .contact-desktop > h2 {
@@ -640,6 +650,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .illustratie-img {
     border: 1px solid #000;
     width: 80vw;
@@ -785,5 +796,4 @@
   .contact-desktop {
     display: none;
   }
-  /*-- --*/
-}
+
