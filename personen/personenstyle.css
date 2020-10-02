@@ -27,8 +27,8 @@
 
   .vlek-eigenschap {
     position: absolute;
-    width: 50vw;
-    height: 30vw;
+    width: 60vw;
+    height: 40vw;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -98,7 +98,7 @@
   .nav-desktop {
     position: fixed;
     right: -50;
-    margin: 50px 100px 0px 50px;
+    margin: 50px 220px 0px 50px;
     width: 40vw;
     height: 10vh;
     display: flex;
@@ -490,7 +490,7 @@
     float: left;
     position: absolute;
     z-index: -15;
-    height: 256vh;
+    height: 300vh;
     width: 100vw;
     overflow: hidden;
     box-sizing: border-box;
