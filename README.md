@@ -8,3 +8,6 @@ Wij maken huisstijlen voor startende bedrijven en bedrijven die een nieuw imago 
 
 
 http://www.thisisevole.ga/
+
+ Bart Hess link: 
+ http://thisisevole.ga/barthess.html
